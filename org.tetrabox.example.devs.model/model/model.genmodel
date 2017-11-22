@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.tetrabox.example.devs.model/src" modelPluginID="org.tetrabox.example.devs.model"
+    modelName="Model" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>model.ecore</foreignModel>
+  <genPackages prefix="Devs" disposableProviderFactory="true" ecorePackage="model.ecore#/">
+    <genClasses ecoreClass="model.ecore#//DEVSModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//DEVSModel/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//DEVSModel/inPorts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//DEVSModel/outPorts"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//AtomicModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//AtomicModel/states"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//AtomicModel/deltInt"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//AtomicModel/deltExt"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//AtomicModel/timeAdvance"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//AtomicModel/lambda"/>
+      <genOperations ecoreOperation="model.ecore#//AtomicModel/receiveInit">
+        <genParameters ecoreParameter="model.ecore#//AtomicModel/receiveInit/source"/>
+        <genParameters ecoreParameter="model.ecore#//AtomicModel/receiveInit/time"/>
+      </genOperations>
+      <genOperations ecoreOperation="model.ecore#//AtomicModel/receiveStar">
+        <genParameters ecoreParameter="model.ecore#//AtomicModel/receiveStar/target"/>
+        <genParameters ecoreParameter="model.ecore#//AtomicModel/receiveStar/time"/>
+      </genOperations>
+      <genOperations ecoreOperation="model.ecore#//AtomicModel/receiveX">
+        <genParameters ecoreParameter="model.ecore#//AtomicModel/receiveX/target"/>
+        <genParameters ecoreParameter="model.ecore#//AtomicModel/receiveX/x"/>
+        <genParameters ecoreParameter="model.ecore#//AtomicModel/receiveX/time"/>
+      </genOperations>
+      <genOperations ecoreOperation="model.ecore#//AtomicModel/sendY">
+        <genParameters ecoreParameter="model.ecore#//AtomicModel/sendY/source"/>
+        <genParameters ecoreParameter="model.ecore#//AtomicModel/sendY/y"/>
+        <genParameters ecoreParameter="model.ecore#//AtomicModel/sendY/time"/>
+      </genOperations>
+      <genOperations ecoreOperation="model.ecore#//AtomicModel/sendDone">
+        <genParameters ecoreParameter="model.ecore#//AtomicModel/sendDone/source"/>
+        <genParameters ecoreParameter="model.ecore#//AtomicModel/sendDone/time"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//CoupledModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//CoupledModel/externalInputCouplings"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//CoupledModel/internalCouplings"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//CoupledModel/outputCouplings"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//CoupledModel/children"/>
+      <genOperations ecoreOperation="model.ecore#//CoupledModel/receiveInit">
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/receiveInit/source"/>
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/receiveInit/time"/>
+      </genOperations>
+      <genOperations ecoreOperation="model.ecore#//CoupledModel/receiveStar">
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/receiveStar/target"/>
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/receiveStar/time"/>
+      </genOperations>
+      <genOperations ecoreOperation="model.ecore#//CoupledModel/receiveX">
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/receiveX/target"/>
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/receiveX/x"/>
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/receiveX/time"/>
+      </genOperations>
+      <genOperations ecoreOperation="model.ecore#//CoupledModel/receiveY">
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/receiveY/source"/>
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/receiveY/y"/>
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/receiveY/time"/>
+      </genOperations>
+      <genOperations ecoreOperation="model.ecore#//CoupledModel/receiveDone">
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/receiveDone/source"/>
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/receiveDone/time"/>
+      </genOperations>
+      <genOperations ecoreOperation="model.ecore#//CoupledModel/sendInit">
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/sendInit/source"/>
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/sendInit/time"/>
+      </genOperations>
+      <genOperations ecoreOperation="model.ecore#//CoupledModel/sendStar">
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/sendStar/target"/>
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/sendStar/time"/>
+      </genOperations>
+      <genOperations ecoreOperation="model.ecore#//CoupledModel/sendX">
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/sendX/target"/>
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/sendX/x"/>
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/sendX/time"/>
+      </genOperations>
+      <genOperations ecoreOperation="model.ecore#//CoupledModel/sendY">
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/sendY/source"/>
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/sendY/y"/>
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/sendY/time"/>
+      </genOperations>
+      <genOperations ecoreOperation="model.ecore#//CoupledModel/sendDone">
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/sendDone/source"/>
+        <genParameters ecoreParameter="model.ecore#//CoupledModel/sendDone/time"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//State">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//State/name"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//TimeAdvance">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//TimeAdvance/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TimeAdvance/lifetime"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//Lambda">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//Lambda/state"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//Lambda/outPort"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//OutPort">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//OutPort/name"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//InPort">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//InPort/name"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//InternalTransition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//InternalTransition/sourceState"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//InternalTransition/targetState"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//ExternalTransition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//ExternalTransition/inPort"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//ExternalTransition/sourceState"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//ExternalTransition/targetState"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//ExternalInputCoupling">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//ExternalInputCoupling/dest"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//ExternalInputCoupling/outPort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//ExternalInputCoupling/inPort"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//InternalCoupling">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//InternalCoupling/src"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//InternalCoupling/outPort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//InternalCoupling/dest"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//InternalCoupling/inPort"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//OutputCoupling">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//OutputCoupling/src"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//OutputCoupling/outPort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//OutputCoupling/inPort"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

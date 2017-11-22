@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>
+  <extension point="org.eclipse.gemoc.executionframework.event.api">
+    <org.eclipse.gemoc.event.api class="org.tetrabox.example.devs.eventinterpreter.DevsBehavioralAPI" language="org.tetrabox.example.Devs"/>
+  </extension>
+</plugin>

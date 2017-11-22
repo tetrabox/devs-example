@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Connector
+Bundle-SymbolicName: org.tetrabox.example.devs.connector;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.google.guava,
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.xtend.lib,
+ org.eclipse.xtend.lib.macro,
+ org.eclipse.gemoc.executionframework.event.manager,
+ org.eclipse.gemoc.trace.commons.model,
+ org.eclipse.gemoc.xdsmlframework.api,
+ org.tetrabox.example.devs,
+ org.tetrabox.example.devs.event,
+ org.eclipse.gemoc.executionframework.event.connector;bundle-version="3.0.0"
+

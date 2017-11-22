@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="ASCII"?>
+<opsemanticsview:OperationalSemanticsView xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:opsemanticsview="http://opsemanticsview/1.0">
+  <rules calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15">
+    <operation name="next"/>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//DEVSModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:EventHandler" calledRules="//@rules.0 //@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.24 //@rules.16 //@rules.7 //@rules.8 //@rules.19 //@rules.17 //@rules.9 //@rules.10 //@rules.11 //@rules.18 //@rules.12 //@rules.13 //@rules.14 //@rules.15" stepRule="true">
+    <operation name="receiveX">
+      <eParameters name="target" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="x" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//AtomicModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:EventHandler" calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.16 //@rules.7 //@rules.8 //@rules.21 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15" stepRule="true">
+    <operation name="receiveX">
+      <eParameters name="target" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="x" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//CoupledModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:EventEmitter" calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15" stepRule="true">
+    <operation name="sendDone">
+      <eParameters name="source" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//AtomicModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:EventHandler" calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.16 //@rules.7 //@rules.8 //@rules.17 //@rules.9 //@rules.10 //@rules.11 //@rules.18 //@rules.12 //@rules.13 //@rules.14 //@rules.15" stepRule="true">
+    <operation name="receiveInit">
+      <eParameters name="source" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//AtomicModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:EventHandler" calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.16 //@rules.7 //@rules.8 //@rules.21 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.22 //@rules.13 //@rules.14 //@rules.15" stepRule="true">
+    <operation name="receiveStar">
+      <eParameters name="target" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//CoupledModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:EventHandler" calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.21 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15" stepRule="true">
+    <operation name="receiveY">
+      <eParameters name="source" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="y" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//CoupledModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:EventEmitter" calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15" stepRule="true">
+    <operation name="sendY">
+      <eParameters name="source" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="y" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//AtomicModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:EventHandler" calledRules="//@rules.0 //@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.16 //@rules.8 //@rules.19 //@rules.17 //@rules.9 //@rules.10 //@rules.11 //@rules.18 //@rules.12 //@rules.13 //@rules.14 //@rules.15" stepRule="true">
+    <operation name="receiveStar">
+      <eParameters name="target" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//AtomicModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:EventHandler" calledRules="//@rules.0 //@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.20 //@rules.21 //@rules.9 //@rules.10 //@rules.11 //@rules.18 //@rules.12 //@rules.14 //@rules.22 //@rules.13 //@rules.15" stepRule="true">
+    <operation name="receiveDone">
+      <eParameters name="source" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//CoupledModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:EventEmitter" calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15" stepRule="true">
+    <operation name="sendY">
+      <eParameters name="source" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="y" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//CoupledModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:EventEmitter" calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15" stepRule="true">
+    <operation name="sendStar">
+      <eParameters name="target" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//CoupledModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:EventEmitter" calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15" stepRule="true">
+    <operation name="sendInit">
+      <eParameters name="source" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//CoupledModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:StartEventHandler" calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.16 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15 //@rules.23" stepRule="true">
+    <operation name="receiveInit">
+      <eParameters name="source" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//CoupledModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:EventEmitter" calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15" stepRule="true">
+    <operation name="sendDone">
+      <eParameters name="source" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//CoupledModel"/>
+  </rules>
+  <rules xsi:type="opsemanticsview:EventEmitter" calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15" stepRule="true">
+    <operation name="sendX">
+      <eParameters name="target" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="x" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eParameters>
+      <eParameters name="time" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </eParameters>
+    </operation>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//CoupledModel"/>
+  </rules>
+  <rules calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15">
+    <operation name="last"/>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//DEVSModel"/>
+  </rules>
+  <rules calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15">
+    <operation name="state"/>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//AtomicModel"/>
+  </rules>
+  <rules calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15">
+    <operation name="next"/>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//DEVSModel"/>
+  </rules>
+  <rules calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15">
+    <operation name="state"/>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//AtomicModel"/>
+  </rules>
+  <rules calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15">
+    <operation name="root"/>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//CoupledModel"/>
+  </rules>
+  <rules calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15">
+    <operation name="activeChildrenIDs"/>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//CoupledModel"/>
+  </rules>
+  <rules calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15">
+    <operation name="eventsToProcess"/>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//CoupledModel"/>
+  </rules>
+  <rules calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15">
+    <operation name="root"/>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//CoupledModel"/>
+  </rules>
+  <rules calledRules="//@rules.1 //@rules.2 //@rules.3 //@rules.4 //@rules.5 //@rules.6 //@rules.7 //@rules.8 //@rules.9 //@rules.10 //@rules.11 //@rules.12 //@rules.13 //@rules.14 //@rules.15">
+    <operation name="last"/>
+    <containingClass href="../../org.tetrabox.example.devs.model/model/model.ecore#//DEVSModel"/>
+  </rules>
+  <executionMetamodel href="../../org.tetrabox.example.devs.model/model/model.ecore#/"/>
+</opsemanticsview:OperationalSemanticsView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.gemoc.executionframework.event.connector">
+      <org.eclipse.gemoc.event.connector
+            class="org.tetrabox.example.devs.connector.DevsConnector">
+      </org.eclipse.gemoc.event.connector>
+   </extension>
+
+
+</plugin>

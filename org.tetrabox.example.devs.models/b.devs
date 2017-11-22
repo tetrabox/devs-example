@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<devs:AtomicModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:devs="http://org.tetrabox.example.devs/model" name="b" initialState="Wait">
+  <inPorts name="receive"/>
+  <outPorts name="send"/>
+  <states name="Wait"/>
+  <states name="Send"/>
+  <deltInt sourceState="Send" targetState="Wait"/>
+  <deltInt sourceState="Wait" targetState="Send"/>
+  <deltExt inPort="receive" sourceState="Wait" targetState="Send"/>
+  <timeAdvance state="Send" lifetime="0.1"/>
+  <timeAdvance state="Wait" lifetime="-1.0"/>
+  <lambda state="Send" outPort="send"/>
+</devs:AtomicModel>

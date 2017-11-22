@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension point="org.eclipse.gemoc.gemoc_language_workbench.sequential.xdsml">
+    <XDSML_Definition name="org.tetrabox.example.Devs" xdsmlFilePath="platform:/plugin/org.tetrabox.example.devs/src/org/tetrabox/example/devs/Devs.dsl" modelLoader_class="org.eclipse.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" />
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated model -->
+      <package
+            uri="http://org.tetrabox.example.devs/model"
+            class="devs.DevsPackage"
+            genModel="model/model.genmodel"/>
+   </extension>
+</plugin>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<devs:CoupledModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:devs="http://org.tetrabox.example.devs/model" name="pingpong">
+  <internalCouplings src="b" outPort="send" dest="a" inPort="receive"/>
+  <internalCouplings src="a" outPort="send" dest="b" inPort="receive"/>
+  <children>a</children>
+  <children>b</children>
+</devs:CoupledModel>

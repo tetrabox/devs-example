@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.tetrabox.example.devs.event/src-gen/" modelPluginID="org.tetrabox.example.devs.event"
+    modelName="Devsevent" complianceLevel="7.0" copyrightFields="false" usedGenPackages="platform:/plugin/org.eclipse.gemoc.executionframework.event.model/model/event.genmodel#//event ../../org.tetrabox.example.devs.model/model/model.genmodel#//devs">
+  <foreignModel>platform:/resource/org.tetrabox.example.devs.model/model/model.ecore</foreignModel>
+  <genPackages prefix="Devsevent" basePackage="org.tetrabox.example.devs.event" disposableProviderFactory="true"
+      fileExtensions="devse" ecorePackage="DevsEvent.ecore#/">
+    <genClasses image="false" ecoreClass="DevsEvent.ecore#//DevsDSLEvent"/>
+    <genClasses image="false" ecoreClass="DevsEvent.ecore#//AtomicModelEvent">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DevsEvent.ecore#//AtomicModelEvent/atomicModel"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//AtomicModelReceiveXEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//AtomicModelReceiveXEvent/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//AtomicModelReceiveXEvent/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//AtomicModelReceiveXEvent/time"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="DevsEvent.ecore#//CoupledModelEvent">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DevsEvent.ecore#//CoupledModelEvent/coupledModel"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//CoupledModelReceiveXEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelReceiveXEvent/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelReceiveXEvent/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelReceiveXEvent/time"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//AtomicModelSendDoneEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//AtomicModelSendDoneEvent/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//AtomicModelSendDoneEvent/time"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//AtomicModelReceiveInitEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//AtomicModelReceiveInitEvent/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//AtomicModelReceiveInitEvent/time"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//CoupledModelReceiveStarEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelReceiveStarEvent/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelReceiveStarEvent/time"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//CoupledModelReceiveYEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelReceiveYEvent/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelReceiveYEvent/y"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelReceiveYEvent/time"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//AtomicModelSendYEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//AtomicModelSendYEvent/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//AtomicModelSendYEvent/y"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//AtomicModelSendYEvent/time"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//AtomicModelReceiveStarEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//AtomicModelReceiveStarEvent/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//AtomicModelReceiveStarEvent/time"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//CoupledModelReceiveDoneEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelReceiveDoneEvent/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelReceiveDoneEvent/time"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//CoupledModelSendYEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelSendYEvent/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelSendYEvent/y"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelSendYEvent/time"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//CoupledModelSendStarEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelSendStarEvent/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelSendStarEvent/time"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//CoupledModelSendInitEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelSendInitEvent/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelSendInitEvent/time"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//CoupledModelReceiveInitEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelReceiveInitEvent/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelReceiveInitEvent/time"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//CoupledModelSendDoneEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelSendDoneEvent/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelSendDoneEvent/time"/>
+    </genClasses>
+    <genClasses ecoreClass="DevsEvent.ecore#//CoupledModelSendXEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelSendXEvent/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelSendXEvent/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DevsEvent.ecore#//CoupledModelSendXEvent/time"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
